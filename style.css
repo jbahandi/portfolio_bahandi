@@ -1,0 +1,149 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+/* Project Layout */
+
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adds spacing between project sections */
+}
+
+.project {
+    max-width: 600px; /* Set a reasonable max-width */
+    margin: 0 auto; /* Center the projects */
+    background-color: #333; /* You can change the background color as needed */
+    padding: 20px;
+    border-radius: 8px; /* Add a subtle border-radius for style */
+}
+
+.project img {
+    max-width: 100%; /* Ensures images scale down to fit within the container */
+    height: auto;
+    display: block;
+    margin: 10px 0; /* Adds space between the images and text */
+}
+
+#projects h1 {
+    text-align: left; /* Keep the Game Dev Projects heading aligned left */
+    margin-bottom: 20px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Responsive Design - Media Queries */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    #projects {
+        flex-direction: column;
+    }
+
+    .project {
+        flex-basis: 100%; /* Full width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    h1, h2 {
+        font-size: 24px;
+    }
+}
+
+#web-projects {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adds spacing between projects */
+}
+
+#web-projects h1 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.project {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.project a {
+    display: inline-block;
+    margin-right: 15px;
+    text-decoration: none;
+    color: #00aaff;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
